@@ -5,7 +5,10 @@ namespace Demo;
 class SingleObj
 {
     private static $instance = null;
+
+    // php 构造对象，禁止构造方法，禁止克隆
     private function __construct() {}
+    private function __clone() {}
 
     public static function getInstance()
     {
