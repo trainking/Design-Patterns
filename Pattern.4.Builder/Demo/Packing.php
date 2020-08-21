@@ -2,4 +2,7 @@
 
 namespace Demo;
 
-interface Packing{}
+interface Packing
+{
+    function name();
+}

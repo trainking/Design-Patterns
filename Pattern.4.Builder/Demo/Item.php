@@ -1,5 +1,7 @@
 <?php
 
+namespace Demo;
+
 // 构造的元素具有的功能属性
 interface Item
 {

@@ -14,6 +14,6 @@ abstract class Burger implements Item
     // 共有属性先实现
     public function packing()
     {
-        return Wrapper();
+        return (new Wrapper())->name();
     }
 }

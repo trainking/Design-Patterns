@@ -1,10 +1,21 @@
 <?php
 
+use Demo\MealBuilder;
+
 class Application 
 {
     public static function main() 
     {
         self::registe();
+
+        $builder = new MealBuilder();
+        $vegMeal = $builder->prepareVegMeal();
+        echo "VegMeal:".$vegMeal->getCost()."\n";
+        $vegMeal->showItems();
+        $nonVegMeal = $builder->prepareNonVegMeal();
+        echo "NonVegMeal:".$nonVegMeal->getCost()."\n";
+        $nonVegMeal->showItems();
+
     }
 
     // 注册自动加载类的方法

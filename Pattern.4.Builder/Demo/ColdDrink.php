@@ -14,6 +14,6 @@ abstract class ColdDrink implements Item
     // 共有属性先实现
     public function packing()
     {
-        return new Bottle();
+        return (new Bottle())->name();
     }
 }
